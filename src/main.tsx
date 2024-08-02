@@ -9,4 +9,3 @@ ReactDOM.createRoot(document.getElementById('root')!).render
     <App />
   </React.StrictMode>,
 )
-<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis aperiam corporis velit ullam reiciendis illum, eveniet adipisci quas dolorum, fugit in. Dolor ex tempore porro laudantium quod. Unde, maxime.<h1>
