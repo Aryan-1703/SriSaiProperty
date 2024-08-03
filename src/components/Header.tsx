@@ -5,7 +5,7 @@ import "../styles/Header.css";
 
 const Header = () => {
 	return (
-		<Navbar bg="white" expand="lg" className="py-3 border-bottom">
+		<Navbar bg="white" expand="lg" className="py-5 border-bottom">
 			<Container>
 				<Navbar.Brand href="/">
 					<img
