@@ -1,0 +1,17 @@
+.projects {
+    padding: 2rem;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Add styles for individual project items */
+  
