@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import Projects from './components/Project';
+import WelcomeSection from './components/WelcomeSection';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -10,7 +10,7 @@ const App = () => {
     <div className="App">
       <Header />
       <HeroSection />
-      <Projects />
+      <WelcomeSection />
       <Footer />
     </div>
   );

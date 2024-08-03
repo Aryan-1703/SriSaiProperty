@@ -1,0 +1,20 @@
+.welcome-section {
+  padding: 60px 20px; /* Adjust padding as needed */
+  background-color: #fff; /* Set background color */
+  border-top: 1px solid #e5e5e5; /* Optional: Add a top border */
+  border-bottom: 1px solid #e5e5e5; /* Optional: Add a bottom border */
+}
+
+.welcome-heading {
+  font-size: 2.5rem; /* Adjust font size */
+  font-weight: 700; /* Bold font weight */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.welcome-description {
+  font-size: 1rem; /* Adjust font size */
+  line-height: 1.5; /* Line height for better readability */
+  max-width: 800px; /* Limit the width for better alignment */
+  margin: 0 auto; /* Center the text block */
+  color: #555; /* Text color */
+}
