@@ -5,37 +5,33 @@ import "../styles/Header.css";
 
 const Header = () => {
 	return (
-		<Navbar bg="white" expand="lg" className="py-5 border-bottom">
+		<Navbar bg="white" expand="lg" className="header">
 			<Container>
 				<Navbar.Brand href="/">
 					<img
-						src="/path-to-your-logo.png"
+						src="/logo.jpg"
 						alt="Logo"
-						height="40"
-						className="d-inline-block align-top"
+						className="d-inline-block align-top logo"
 					/>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="ml-auto align-items-center">
-						<Nav.Link href="/" className="mx-2 text-dark">
+				<Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
+					<Nav className="mx-auto nav-center">
+						<Nav.Link href="/" className="mx-3 nav-link">
 							Home
 						</Nav.Link>
-						<NavDropdown title="Rent With Us" id="rent-dropdown" className="mx-2">
+						<NavDropdown title="Rent With Us" id="rent-dropdown" className="mx-3 nav-link">
 							<NavDropdown.Item href="/residential">Residential</NavDropdown.Item>
 							<NavDropdown.Item href="/commercial">Commercial</NavDropdown.Item>
 						</NavDropdown>
-						<Nav.Link href="/about" className="mx-2 text-dark">
+						<Nav.Link href="/about" className="mx-3 nav-link">
 							About
 						</Nav.Link>
-						<Nav.Link href="/contact" className="mx-2 text-dark">
+						<Nav.Link href="/contact" className="mx-3 nav-link">
 							Contact
 						</Nav.Link>
-						<Nav.Link href="/iwd2024" className="mx-2 text-dark">
-							IWD 2024
-						</Nav.Link>
 					</Nav>
-					<Button variant="dark" className="ml-lg-3 px-3">
+					<Button variant="primary" className="ml-lg-3 btn-custom">
 						Find My Dream Place
 					</Button>
 				</Navbar.Collapse>

@@ -1,36 +1,74 @@
-/* Adjust the logo */
-.navbar-brand img {
-	padding: 0;
-	margin: 0;
+/* Header styling similar to Avana Builds */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
 }
 
-/* Styling for nav links */
-.navbar-nav .nav-link {
-	font-size: 16px;
-	color: #333;
+/* Logo adjustments */
+.logo {
+    height: 100px;
+	transition: transform 0.6s ease, filter 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.25); /* Slightly enlarge the logo on hover */
+    
 }
 
-/* Active link styling */
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link:hover {
-	color: #555;
-	text-decoration: underline;
+/* Centering nav links */
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Dropdown menu */
+/* Navigation links styling */
+.nav-link {
+    color: #852085 !important;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.nav-link:hover {
+    color:  #fd851d!important;
+	transition: background-color 0.8s ease, transform 0.2s ease;
+    border-color: #45a049; /* Matching border color */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Updated Button styling */
+.btn-custom {
+
+    background-color: #852085; /* Green background */
+    border-color: #4CAF50; /* Matching border color */
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px; /* Rounded button edges */
+    padding: 10px 20px; /* Padding for better spacing */
+    transition: background-color 0.8s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.btn-custom:hover {
+    background-color: #fd851d; /* Darker green on hover */
+    border-color: #45a049; /* Matching border color */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Dropdown menu styling */
 #rent-dropdown .dropdown-menu {
-	min-width: 10rem;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Button styling */
-button.ml-lg-4 {
-	color: #fff;
-	background-color: #0b3d91;
-	border: 1px solid #0b3d91;
+#rent-dropdown .dropdown-item {
+    color: #333;
+    transition: background-color 0.2s ease-in-out;
 }
 
-button.ml-lg-3:hover {
-	background-color: #062860;
-	border-color: #062860;
+#rent-dropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
 }

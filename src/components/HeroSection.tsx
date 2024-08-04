@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <section className="hero d-flex align-items-center justify-content-center text-center text-white">
       <div className="hero-content">
-        <h1 className="display-4">Welcome to Sri Sai Property</h1>
-        <p className="lead">Apunka adda</p>
+        <h1 className="display-3"><b>FIND YOUR IDEAL HOME WITH US</b></h1>
+        <br />
       </div>
     </section>
   );

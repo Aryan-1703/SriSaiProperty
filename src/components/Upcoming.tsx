@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Upcoming = () => {
 	return (
 		<Container fluid className="upcoming-section text-center">
-			Future Projects
+			
 		</Container>
 	);
 };
