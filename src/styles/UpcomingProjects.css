@@ -1,0 +1,41 @@
+.upcoming-projects-container {
+	background-color: #ba3a3a00;
+	padding: 2rem 0;
+}
+
+.project-card {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-10px);
+}
+
+.join-waitlist-btn {
+	background-color: #002855;
+    color:black;
+	border: none;
+	position: relative;
+	z-index: 1;
+}
+
+.join-waitlist-btn::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	background-color: #fff;
+	border: 2px solid #002855;
+	z-index: -1;
+	transition: all 0.3s ease;
+}
+
+.join-waitlist-btn:hover::before {
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+}
