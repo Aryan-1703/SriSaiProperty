@@ -1,20 +1,23 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import WelcomeSection from "./components/WelcomeSection";
-import UpcomingProjects from "./components/UpcomingProject";
-import Footer from "./components/Footer";
-import "./App.css";
-
+import Home from "./pages/home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Residential from "./pages/Residential";
+import Commercial from "./pages/Commercial";
 const App = () => {
 	return (
-		<div className="App">
+		<Router>
 			<Header />
-			<HeroSection />
-			<WelcomeSection />
-			<UpcomingProjects />
-			<Footer />
-		</div>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/residential" element={<Residential />} />
+				<Route path="/commercial" element={<Commercial />} />
+			</Routes>
+		</Router>
 	);
 };
 
