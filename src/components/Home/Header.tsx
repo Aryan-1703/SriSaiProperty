@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/Home/Header.css";
+import "../../styles/Home/Header.css";
 
 const Header = () => {
 	return (
