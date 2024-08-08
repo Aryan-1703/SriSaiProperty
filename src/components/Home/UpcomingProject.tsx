@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/UpcomingProjects.css";
+import "../styles/Home/UpcomingProjects.css";
 
 interface Project {
 	address: string;

@@ -1,7 +1,7 @@
 // HeroSection.jsx
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/HeroSection.css';
+import '../styles/Home/HeroSection.css';
 
 const HeroSection = () => {
   return (
