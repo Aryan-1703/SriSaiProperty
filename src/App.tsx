@@ -4,8 +4,8 @@ import Header from "./components/Home/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Residential from "./pages/Residential";
-import Commercial from "./pages/Commercial";
+import Residents from "./pages/Residents";
+
 const App = () => {
 	return (
 		<Router>
@@ -14,8 +14,7 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
-				<Route path="/residential" element={<Residential />} />
-				<Route path="/commercial" element={<Commercial />} />
+				<Route path="/residents" element={<Residents />} />
 			</Routes>
 		</Router>
 	);

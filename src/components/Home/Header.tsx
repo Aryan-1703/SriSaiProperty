@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, Button} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/Home/Header.css";
 
@@ -20,10 +20,9 @@ const Header = () => {
 						<Nav.Link href="/" className="mx-3 nav-link">
 							Home
 						</Nav.Link>
-						<NavDropdown title="Rent With Us" id="rent-dropdown" className="mx-3 nav-link">
-							<NavDropdown.Item href="/residential">Residential</NavDropdown.Item>
-							<NavDropdown.Item href="/commercial">Commercial</NavDropdown.Item>
-						</NavDropdown>
+						<Nav.Link href="/residents" className="mx-3 nav-link">
+							Residents
+						</Nav.Link>
 						<Nav.Link href="/about" className="mx-3 nav-link">
 							About
 						</Nav.Link>
@@ -31,7 +30,7 @@ const Header = () => {
 							Contact
 						</Nav.Link>
 					</Nav>
-					<Button variant="primary" className="ml-lg-3 btn-custom">
+					<Button variant="secondary" className="ml-lg-3 btn-custom">
 						Find My Dream Place
 					</Button>
 				</Navbar.Collapse>

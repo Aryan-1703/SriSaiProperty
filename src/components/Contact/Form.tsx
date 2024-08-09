@@ -21,6 +21,10 @@ const Form = () => {
                     <input type="tel" className="form-control" id="phone" required />
                 </div>
                 <div className="mb-3">
+                    <label htmlFor="Address" className="form-label">Home Address*</label>
+                    <input type="text" className="form-control" id="address" required />
+                </div>
+                <div className="mb-3">
                     <label htmlFor="message" className="form-label">Message*</label>
                     <textarea className="form-control" id="message"  required></textarea>
                 </div>
@@ -29,5 +33,4 @@ const Form = () => {
         </div>
     );
 };
-
 export default Form;

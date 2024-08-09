@@ -4,7 +4,7 @@ import '../../styles/Home/Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2024 Avana Builds. All rights reserved.</p>
+      <p>&copy; CMS Builds 2024. All rights reserved.</p>
     </footer>
   );
 };
