@@ -3,11 +3,11 @@
 }
 
 .form-container {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    background-color: #ffffff;
+    padding: 100px;
+    border-radius: 4%;
+    box-shadow: 0 10px 10px rgb(211, 85, 85);
+    max-width: 800px;
     margin: auto;
 }
 
@@ -17,54 +17,7 @@
 }
 
 .form-control {
-    border-radius: 5px.form-container {
-        max-width: 600px;
-        margin-top: 100px;
-        margin: 0 auto;
-        padding: 40px;
-        background-color: #fff;
-    }
-    
-    .form-header {
-        text-align: center;
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-    
-    .form-subheader {
-        text-align: center;
-        font-size: 16px;
-        margin-bottom: 20px;
-        color: #6c757d;
-    }
-    
-    .form-required {
-        text-align: left;
-        font-size: 14px;
-        margin-bottom: 20px;
-        color: #1a5589;
-    }
-    
-    .form-label {
-        font-weight: bold;
-    }
-    
-    .form-control {
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        background-color: rgb(226, 226, 226);
-    
-    }
-    
-    button[type="submit"] {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        font-size: 18px;
-        border-radius: 5px;
-        margin-top: 20px;
-    };
+    border-radius: 5px;
     border: 1px solid #ced4da;
     padding: 10px;
 }
@@ -75,10 +28,10 @@
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #000000;
+    border-color: black;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 16px;
     width: 100%;
     font-weight: 600;
@@ -86,7 +39,7 @@
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #ff0303;
 }
 
 .form-group {
@@ -99,7 +52,7 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
+    font-size: 20px;
     color: #6c757d;
 }
 

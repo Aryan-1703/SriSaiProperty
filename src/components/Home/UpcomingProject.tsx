@@ -35,7 +35,7 @@ const projectData: Project[] = [
 const UpcomingProjects: React.FC = () => {
 	return (
 		<Container className="upcoming-projects-container my-5">
-			<h2 className="text-center mb-4">Upcoming Development Projects</h2>
+			<h2 className="text-center mb-4"><b>Upcoming Development Projects</b></h2>
 			<Row>
 				{projectData.map((project, index) => (
 					<Col key={index} md={3} className="mb-4">

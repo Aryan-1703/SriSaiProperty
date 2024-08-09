@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.348); /* Optional: Add a dark overlay */
+  background: rgba(0, 0, 0, 0.50); /* Optional: Add a dark overlay */
 }
 
 .hero-content {

@@ -4,38 +4,46 @@
 }
 
 .project-card {
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 2 4px 8px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-	transform: translateY(-10px);
+	transform: translateY(-20px);
 }
 
 .join-waitlist-btn {
-	background-color: #002855;
-    color:black;
-	border: none;
+	background-color: #00207e;
+	border-color: rgb(243, 18, 18);
+    color:rgb(253, 253, 253);
 	position: relative;
 	z-index: 1;
+	border:none;
+	outline: none;
+    box-shadow: none;
 }
+
 
 .join-waitlist-btn::before {
 	content: "";
+	border-color: #ff6200;
 	position: absolute;
 	top: 5px;
 	left: 5px;
 	right: 5px;
 	bottom: 5px;
-	background-color: #fff;
-	border: 2px solid #002855;
+	background-color: #000000;
+	text-decoration-color: black;
 	z-index: -1;
 	transition: all 0.3s ease;
+	
 }
 
 .join-waitlist-btn:hover::before {
 	top: -5px;
+	border-color: #ed1818;
 	left: -5px;
 	right: -5px;
 	bottom: -5px;
 }
+
