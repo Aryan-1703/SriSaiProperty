@@ -3,7 +3,8 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/Home/UpcomingProjects.css";
 
-interface Project {
+interface Project 
+{
 	address: string;
 	city: string;
 	imageUrl: string;

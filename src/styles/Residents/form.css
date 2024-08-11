@@ -5,55 +5,48 @@
 .form-container {
     background-color: #ffffff;
     padding: 100px;
-    border-radius: 4%;
+    border-radius: 10%;
     box-shadow: 0 10px 10px rgb(211, 85, 85);
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
 }
-
 .form-label {
-    font-weight: 600;
-    color: #495057;
+    font-weight: 900;
+    color: #020202;
 }
-
 .form-control {
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #ced4da;
     padding: 10px;
 }
-
 .form-control:focus {
     border-color: #80bdff;
     box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
 }
-
 .btn-primary {
     background-color: #000000;
-    border-color: black;
+    border-color: #000000;
     padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 20px;
     width: 100%;
     font-weight: 600;
     transition: background-color 0.3s ease-in-out;
 }
-
 .btn-primary:hover {
     background-color: #ff0303;
 }
-
 .form-group {
     position: relative;
     margin-bottom: 20px;
 }
-
 .form-group .form-icon {
     position: absolute;
     left: 10px;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #6c757d;
+    color: #0d78d5;
 }
 
 .form-control-icon {

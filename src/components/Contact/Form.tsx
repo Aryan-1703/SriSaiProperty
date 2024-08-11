@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/Contact/Form.css';
-import { FaUser, FaEnvelope, FaPhone, FaBuilding, FaHome, FaComment } from 'react-icons/fa'; // Importing icons
+import { FaUser, FaEnvelope, FaPhone, FaBuilding, FaComment } from 'react-icons/fa'; // Importing icons
 
 const Form = () => {
     return (

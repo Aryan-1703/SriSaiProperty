@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/Residents/Form.css';
-import { FaUser, FaEnvelope, FaPhone, FaBuilding, FaHome, FaComment } from 'react-icons/fa'; // Importing icons
+import { FaUser, FaEnvelope, FaPhone, FaBuilding, FaComment } from 'react-icons/fa'; // Importing icons
 
-const ResidentQueryForm = () => {
+const ResidentQueryForm = () => 
+    {
     return (
         <div className="form-container">
             <h1 className="form-header">Resident Query Form</h1>
-            <p className="form-subheader">If you're a current resident and have any queries, please fill out the form below. Our team will respond promptly.</p>
+            <p className="form-subheader">If you're a current resident and have any queries, Please fill out the form below. Our team will respond promptly.</p>
             <p className="form-required">"*" Indicates required fields</p>
             <form>
                 <div className="form-group">
