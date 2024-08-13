@@ -75,7 +75,8 @@ const AvailableListings = React.forwardRef<HTMLDivElement>((_, ref) => {
 							<Button
 								variant="primary"
 								className="action-btn"
-								onClick={() => window.open("https://www.google.com/maps", "_blank")}
+								data-bs-toggle="modal"
+								data-bs-target="#waitlistModal"
 							>
 								Contact Us
 							</Button>
