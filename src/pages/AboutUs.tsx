@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "/Users/ak/srisaiproject/SriSaiProperty/src/styles/AboutUs/AboutUs.css";
+import "../styles/AboutUs/AboutUs.css";
 
 const AboutUs: React.FC = () => {
     return (
