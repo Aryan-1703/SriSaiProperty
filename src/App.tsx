@@ -1,8 +1,7 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Home/Header";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Residents from "./pages/Residents";
 
