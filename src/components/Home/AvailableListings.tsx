@@ -43,9 +43,15 @@ const AvailableListings = React.forwardRef<HTMLDivElement>((_, ref) => {
 						<Card.Body>
 							<Card.Title className="listing-title">753 Rae Street</Card.Title>
 							<Card.Text className="listing-location">Regina, Saskatchewan</Card.Text>
+							<Card.Text className="listing-description">
+              Description below:
+This charming 2-bedroom house offers a cozy and comfortable living space, perfect for small families or couples. The home features a single bathroom, a well-equipped kitchen, and a welcoming living room, ideal for relaxation and entertaining. Located in a convenient spot, the house is situated right behind Giant Tiger, providing easy access to shopping essentials. Additionally, it’s close to Canadian Tire, making it a prime location for all your needs. Enjoy the blend of comfort and convenience in this lovely home!
+
+Utilities Not included in the rent.
+							</Card.Text>
 							<Button
 								variant="primary"
-								className="action-btn"
+								className="action-btn btn-sm" /* Smaller button */
 								onClick={() =>
 									window.open(mapUrl("753 Rae Street, Regina, Saskatchewan"), "_blank")
 								}
@@ -53,7 +59,7 @@ const AvailableListings = React.forwardRef<HTMLDivElement>((_, ref) => {
 								View on Map
 							</Button>
 							<Button
-								variant="secondary"
+								variant="primary"
 								className="action-btn mt-2"
 								data-bs-toggle="modal"
 								data-bs-target="#waitlistModal"
