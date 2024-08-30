@@ -1,11 +1,8 @@
 import '../../styles/Home/Footer.css';
-
 const Footer = () => {
   return (
     <footer>
-
       <p>Website Developed by Akshil Patel and Aryan Talpada.</p>
-      
       <p className="contact-info">
         <a href="mailto:Akshilp05@gmail.com?subject=Contact%20from%20Website&body=Hi%20Akshil%20Pate,%0A%0AI%20would%20like%20to%20get%20in%20touch%20with%20you%20regarding%20...">
           akshilp05@gmail.com
@@ -19,5 +16,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

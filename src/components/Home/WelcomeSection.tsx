@@ -40,7 +40,7 @@ const WelcomeSection = () => {
               <Col md={6}>
                 <Card className="location-card">
                   <Card.Body>
-                    <Card.Title>Edmonton, Alberta</Card.Title>
+                    <Card.Title>Calgary, Alberta</Card.Title>
                     <Card.Text>
                       Experience the energy and excitement of Edmonton, a city renowned for its vibrant arts scene, diverse dining options, and family-friendly activities. Whether you're drawn to its bustling downtown or serene suburban areas, Edmonton offers a variety of living environments to match your preferences.
                     </Card.Text>

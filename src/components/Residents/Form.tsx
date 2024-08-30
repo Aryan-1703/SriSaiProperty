@@ -1,8 +1,29 @@
+import React, { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/Residents/Form.css";
 import { FaUser, FaEnvelope, FaPhone, FaBuilding, FaComment } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 const ResidentQueryForm = () => {
+	const formRef = useRef<HTMLFormElement>(null);
+
+	const handleSubmit = (event: React.FormEvent) => {
+		event.preventDefault();
+
+		if (formRef.current) {
+			emailjs
+				.sendForm("Resident_form", "template_a7u9bie", formRef.current, "1WSF14RNa_njICkvf")
+				.then(() => {
+					alert("Thank you for reaching out! We will get back to you shortly.");
+					formRef.current?.reset();
+				})
+				.catch(error => {
+					alert("Sorry, there was an issue with your submission. Please try again later.");
+					console.error(error.text);
+				});
+		}
+	};
+
 	return (
 		<div className="form-container">
 			<h1 className="form-header">Resident Query Form</h1>
@@ -11,7 +32,7 @@ const ResidentQueryForm = () => {
 				Our team will respond promptly.
 			</p>
 			<p className="form-required">* Indicates required fields</p>
-			<form>
+			<form ref={formRef} onSubmit={handleSubmit}>
 				<div className="row">
 					<div className="col-md-6">
 						<div className="form-group">
@@ -23,6 +44,7 @@ const ResidentQueryForm = () => {
 								type="text"
 								className="form-control form-control-icon"
 								id="name"
+								name="from_name"
 								required
 							/>
 						</div>
@@ -37,6 +59,7 @@ const ResidentQueryForm = () => {
 								type="email"
 								className="form-control form-control-icon"
 								id="email"
+								name="from_email"
 								required
 							/>
 						</div>
@@ -51,6 +74,7 @@ const ResidentQueryForm = () => {
 						type="tel"
 						className="form-control form-control-icon"
 						id="phone"
+						name="phone_number"
 						required
 					/>
 				</div>
@@ -59,7 +83,12 @@ const ResidentQueryForm = () => {
 					<label htmlFor="building" className="form-label">
 						Home Address
 					</label>
-					<input type="text" className="form-control form-control-icon" id="building" />
+					<input
+						type="text"
+						className="form-control form-control-icon"
+						id="building"
+						name="building"
+					/>
 				</div>
 				<div className="form-group">
 					<FaComment className="form-icon" />
@@ -69,6 +98,7 @@ const ResidentQueryForm = () => {
 					<textarea
 						className="form-control form-control-icon"
 						id="message"
+						name="message"
 						required
 					></textarea>
 				</div>
