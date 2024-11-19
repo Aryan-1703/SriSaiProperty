@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Modal, Carousel, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/Home/AvailableListings.css";
 import emailjs from "emailjs-com";
@@ -7,6 +7,7 @@ import emailjs from "emailjs-com";
 const AvailableListings = React.forwardRef<HTMLDivElement>((_, ref) => {
 	const formRef = useRef<HTMLFormElement>(null);
 	const [selectedAddress, setSelectedAddress] = useState<string>("");
+	const [showGallery, setShowGallery] = useState<boolean>(false);
 
 	const handleSubmit = (event: React.FormEvent) => {
 		event.preventDefault();
@@ -28,6 +29,9 @@ const AvailableListings = React.forwardRef<HTMLDivElement>((_, ref) => {
 	const mapUrl = (address: string) =>
 		`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
+	// House images array
+	const houseImages = Array.from({ length: 17 }, (_, i) => `/house_2/img${i + 1}.jpg`);
+
 	return (
 		<Container ref={ref} fluid className="available-listings-section my-5">
 			<h2 className="section-title">
@@ -36,55 +40,60 @@ const AvailableListings = React.forwardRef<HTMLDivElement>((_, ref) => {
 			<Row>
 				<Col md={6} lg={4} className="mb-4">
 					<Card className="listing-card h-100">
-						<Card.Img variant="top" src="/house_1/House1.jpg" alt="753 Rae Street" />
+						<Card.Img variant="top" src="/house_2/img7.jpg" alt="3218 Daphne Street" />
 						<Card.Body>
-							<Card.Title className="listing-title">753 Rae Street</Card.Title>
+							<Card.Title className="listing-title">3218 Daphne Street</Card.Title>
 							<Card.Text className="listing-location">Regina, Saskatchewan</Card.Text>
 							<Card.Text className="listing-description">
-								Description below:
-								This charming 2-bedroom house offers a cozy and comfortable living space, perfect for small families or couples. The home features a single bathroom, a well-equipped kitchen, and a welcoming living room, ideal for relaxation and entertaining. Located in a convenient spot, the house is situated right behind Giant Tiger, providing easy access to shopping essentials. Additionally, it’s close to Canadian Tire, making it a prime location for all your needs. Enjoy the blend of comfort and convenience in this lovely home!
-								Utilities Not included in the rent.
+							Discover this cozy 2-bedroom home offering a warm living room, functional kitchen, and single bathroom—perfect for small families or couples. Conveniently located behind Giant Tiger and near Canadian Tire, it provides easy access to shopping, schools, and public transport in a quiet, family-friendly neighborhood.
+
+Enjoy natural light, a practical layout, and a prime location for everyday comfort.
+
+Schedule your viewing today!
 							</Card.Text>
 							<Button
 								variant="primary"
-								className="action-btn btn-sm" /* Smaller button */
-								onClick={() => window.open(mapUrl("753 Rae Street, Regina, Saskatchewan"), "_blank")}
+								className="action-btn btn-sm"
+								onClick={() => window.open(mapUrl("3218 Daphne Street, Saskatchewan"), "_blank")}
 							>
 								View on Map
 							</Button>
 							<Button
 								variant="primary"
 								className="action-btn mt-2"
+								onClick={() => setShowGallery(true)} // Open photo gallery
+							>
+								View the House
+							</Button>
+							<Button
+								variant="primary"
+								className="action-btn mt-2"
 								data-bs-toggle="modal"
 								data-bs-target="#waitlistModal"
-								onClick={() => setSelectedAddress("753 Rae Street, Regina, Saskatchewan")}
+								onClick={() => setSelectedAddress("3218 Daphne Street, Regina, Saskatchewan")}
 							>
 								Join the Waitlist
 							</Button>
 						</Card.Body>
 					</Card>
 				</Col>
-
-				<Col md={6} lg={4} className="mb-4">
-					<Card className="listing-card h-100 text-center">
-						<Card.Body>
-							<Card.Title className="listing-title">Coming Soon!</Card.Title>
-							<Card.Text className="listing-description">
-								We are preparing new listings that will be available soon. Stay tuned for updates!
-							</Card.Text>
-							<Button
-								variant="primary"
-								className="action-btn"
-								data-bs-toggle="modal"
-								data-bs-target="#waitlistModal"
-								onClick={() => setSelectedAddress("Coming Soon!")}
-							>
-								Contact Us
-							</Button>
-						</Card.Body>
-					</Card>
-				</Col>
 			</Row>
+
+			{/* Modal for Photo Gallery */}
+			<Modal show={showGallery} onHide={() => setShowGallery(false)} size="lg" centered>
+				<Modal.Header closeButton>
+					<Modal.Title>Gallery: 3218 Daphne Street</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					<Carousel>
+						{houseImages.map((image, index) => (
+							<Carousel.Item key={index}>
+								<img className="d-block w-100" src={image} alt={`House Image ${index + 1}`} />
+							</Carousel.Item>
+						))}
+					</Carousel>
+				</Modal.Body>
+			</Modal>
 
 			{/* Waitlist Modal */}
 			<div

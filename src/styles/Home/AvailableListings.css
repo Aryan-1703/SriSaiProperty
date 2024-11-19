@@ -6,13 +6,13 @@
 
 /* Elegant Heading Styles */
 .section-title {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #004085;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: center;
+	font-size: 2.2rem;
+	font-weight: 400;
+	color: #004085;
+	margin-bottom: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-align: center;
 }
 
 /* Listing Card Styles */
@@ -90,4 +90,31 @@
 
 .modal-body {
 	padding: 1.5rem;
+}
+
+/* Carousel Styles */
+.carousel img {
+	max-height: 75vh; /* Restricts image height to 75% of viewport */
+	width: auto; /* Maintains aspect ratio */
+	object-fit: cover; /* Ensures consistent scaling */
+	margin: auto; /* Centers images */
+	border-radius: 10px; /* Rounded edges */
+}
+
+/* Modal Close Button */
+.btn-close {
+	background-color: #f0f0f0;
+	color: #555;
+	border-radius: 50%;
+	transition: transform 0.3s ease;
+}
+
+.btn-close:hover {
+	transform: scale(1.1);
+	background-color: #e0e0e0;
+}
+
+/* Highlight img7 Priority */
+.carousel .active img[src="/house_2/img7.jpg"] {
+	box-shadow: 0 0 15px #004085; /* Optional: Highlight img7 */
 }
